@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="style.css">    
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <main>
+
+        <div class="div-logo">
+            <img class="logo" src="./imagenes/logo.png" alt="Imagen logo de Alura">
+        </div>
+
+        <div class="div-ingreseTexto">
+            <textarea class="areatexto" id="areatexto" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+
+        <div class="div-aviso1">
+            <img class="exclamacion" src="./imagenes/vector-exclamacion.png" alt="Imagen de exclamación">
+            <label class="aviso1">Solo letras minúsculas y sin acentos</label>
+        </div>
+
+        <div class="div-botones">
+            <button class="boton-encriptar" id="boton-encriptar">Encriptar</button>
+            <button class="boton-desencriptar" id="boton-desencriptar">Desencriptar</button>
+        </div>
+
+        <div class="div-derecha">
+            <textarea cols="30" rows="10" class="areaResultado" id="areaResultado"></textarea>
+            <img class="munheco" id="munheco" src="./imagenes/munheco.png" alt="Imagen de muñeco">
+            <div class="div-aviso2" id="div-aviso2">
+                <label class="aviso2-label1">Ningún mensaje fue encontrado</label>
+                <label class="aviso2-label2">Ingresa el texto que desees encriptar o desencriptar.</label>
+            </div>
+            <button class="boton-copiar" id="boton-copiar">Copiar</button>
+        </div>     
+
+    </main>
+
+    <footer>
+        <p>&copy Berly Condori - Desafio 01 Encriptador 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

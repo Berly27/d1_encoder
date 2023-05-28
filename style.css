@@ -1,0 +1,327 @@
+body {
+    margin: 0;
+    background: #F3F5FC;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100vw;    
+}
+
+.div-logo {
+    display: flex;    
+    position: absolute;
+    top: 5%;
+    left: 5%;      
+}
+
+.logo{
+    width: 120px;
+    height: 48px;
+}
+
+.div-ingreseTexto {
+    position: absolute;
+    top: 18%;
+    left: 12%;
+    width: 50%;
+    height: 55%;    
+    border-radius: 35px;
+}
+
+.areatexto {
+    position: absolute;
+    width: 96%;
+    height: 95%; 
+    left: 1%;
+    top: 2%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.div-aviso1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3%;
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 12%;
+    top: 73%;
+}
+
+.exclamacion {
+    width: auto;
+    height: auto;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.aviso1 { 
+    width: auto;
+    height: auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.div-botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0%;
+    gap: 6%;
+    position: absolute;
+    width: 40%;
+    height: auto;
+    left: 18%;
+    top: 77%;   
+}
+
+.boton-encriptar{
+    flex-direction: row;
+    align-items: flex-start;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border: none;
+    border-radius: 24px;
+    color: white;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.boton-desencriptar{
+    flex-direction: row;
+    align-items: flex-start;
+    width: 328px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.div-derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    position: absolute;
+    left: 67%;
+    top: 5%;
+    width: 30%;
+    height: 85%;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.areaResultado {
+    position: absolute;
+    left: 7%;
+    top: 10%;
+    width: 85%;
+    height: 70%;    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    border: none;
+    outline: none;
+    background: #FFFFFF;
+    visibility: hidden;
+}
+
+.munheco {
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 20%;
+    top: 20%;
+}
+
+.div-aviso2 {
+    display: flex;
+    flex-direction: column;   
+    gap: 10%;
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 160px;
+    top: 510px;
+}
+
+.aviso2-label1 {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.aviso2-label2 {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: 60%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.boton-copiar {
+    position: absolute;
+    top: 85%;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 328px;
+    height: 67px;
+    background: #F3F5FC;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-align: center;
+    font-size: 24px;
+    visibility: hidden;
+}
+
+main button:hover {
+    transform: scale(1.03);
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    width:100%;
+    padding: 3px;    
+    background: #0A3871;
+    text-align: center;
+    color:  #FFFFFF
+}
+
+
+/*Responsive design*/
+
+@media screen and (max-width: 900px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+    }
+
+    .div-logo{
+        display: none;
+        visibility: hidden;
+    }
+    .div-ingreseTexto{
+        width: 95%;
+        height: 60%;
+        left:3%;
+        top: 3%;
+    }
+
+    .div-aviso1{
+        width: 60%;
+        left: 10%;
+        top: 63%;
+    }
+    .aviso1{
+        font-size: 18px;
+    }
+
+    .div-botones{
+        width: 70%;
+        left: 3%;
+        top: 68%;
+    }
+
+    .boton-encriptar,.boton-desencriptar{
+        width: 65%;
+    }
+
+    .div-derecha{
+        width: 95%;
+        height: 24%;
+        left: 3%;
+        top: 80%;
+    }
+
+    .areaResultado{
+        width: 90%;
+        top: 6%;
+    }
+
+    .munheco{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+
+    .div-aviso2{
+        width: 80%;
+        top: 3%;
+        left: 20%;
+    }
+
+    .aviso2-label1, .aviso2-label2{
+        font-size: 24px;
+    }
+
+    .boton-copiar{
+        width: 50%;
+        top: 100%;
+    }
+
+    footer{
+        width: 100%;
+        top: 114%;
+    }
+}
